@@ -41,6 +41,11 @@ def blink():
                 
     finally:
         GPIO.cleanup()
+        
+
+def secuencia2():
+    print "Secuencia 1 iniciada..."
+    
 def secuencia1():
     print "Secuencia 1 iniciada..."
     i = 0
@@ -68,35 +73,6 @@ def secuencia1():
         GPIO.output(quintoLed, False)
         i = i + 1
     print "Fin secuencia 1"
-
-def secuencia2():
-    print "Secuencia 2 iniciada..."
-    i = 0
-    while i < 10:
-        print i
-        GPIO.output(primerLed, True)
-        time.sleep(0.1)
-        GPIO.output(segundoLed, True)
-        time.sleep(0.1)
-	GPIO.output(tercerLed, True)
-	time.sleep(0.1)
-        GPIO.output(cuartoLed, True)
-	time.sleep(0.1)
-        GPIO.output(quintoLed, True)
-        time.sleep(0.1)
-
-        GPIO.output(primerLed, False)
-        time.sleep(0.1)
-        GPIO.output(segundoLed, False)
-	time.sleep(0.1)
-        GPIO.output(tercerLed, False)
-	time.sleep(0.1)
-        GPIO.output(cuartoLed, False)
-	time.sleep(0.1)
-        GPIO.output(quintoLed, False)
-        i = i + 1
-    print "Fin secuencia 2"
-
 def secuencia3():
     print "Secuencia 3 iniciada..."
     i = 0
