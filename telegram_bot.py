@@ -106,7 +106,7 @@ def main():
     try:        
         print "bot iniciado la conche tumare..."
         # Create the Updater and pass it your bot's token.
-        updater = Updater("138467244:AAE-ug93RUAE5auZJNQd9TcUay0jGKhehTI")
+        updater = Updater("TOKEN-ACA")
 
         updater.dispatcher.add_handler(CommandHandler('start', start))
         updater.dispatcher.add_handler(CallbackQueryHandler(button))
